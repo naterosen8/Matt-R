@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>California Ground Truth — Gardening by Climate</title>
+  <meta name="description" content="A deep, region-by-region guide to gardening across California's climates — from the foggy North Coast to the Colorado Desert." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="container">
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none">
+          <path d="M16 29V13" stroke="#2f5d3a" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M16 17c0-6 5-10 11-10 0 6-5 10-11 10Z" fill="#c98a2b" opacity="0.85"/>
+          <path d="M16 21c0-6-5-10-11-10 0 6 5 10 11 10Z" fill="#2f5d3a"/>
+        </svg>
+        <span>Ground Truth</span>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#regions">Regions</a></li>
+        <li><a href="#transect">Why CA Varies</a></li>
+        <li><a href="#compare">Compare</a></li>
+        <li><a href="#water-wise">Water-Wise</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <span class="kicker">A Field Guide</span>
+      <h1>Gardening across <span class="accent">California's</span> eight climates</h1>
+      <p class="lead">
+        No other state packs this much climate variety into one border — foggy redwood coast,
+        Mediterranean bay shoreline, scorching desert, and alpine mountain, sometimes within a
+        two-hour drive of each other. This is a region-by-region breakdown of what actually grows
+        well, and why.
+      </p>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="num">8</span><span class="label">Growing regions</span></div>
+        <div class="hero-stat"><span class="num">5b–11a</span><span class="label">USDA zone range</span></div>
+        <div class="hero-stat"><span class="num">100+ in</span><span class="label">Rainfall spread, wettest to driest</span></div>
+      </div>
+    </div>
+  </header>
+
+  <section id="transect">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">The Root Cause</span>
+        <h2>Why one state has this much climate diversity</h2>
+        <p>Three things do almost all the work: the cold Pacific current and its fog, the
+          mountain ranges that block or funnel that moisture, and elevation. Follow a straight
+          line east from the ocean and you cross more distinct growing climates than most
+          countries have.</p>
+      </div>
+      <div class="transect-wrap">
+        <svg viewBox="0 0 900 260" role="img" aria-label="Cross-section diagram of California from the Pacific Ocean to the desert, showing coast, coast range, valley, Sierra Nevada, and desert">
+          <!-- sky -->
+          <rect x="0" y="0" width="900" height="180" fill="none"/>
+          <!-- ocean -->
+          <rect x="0" y="150" width="120" height="80" fill="#5f9ea0" opacity="0.35"/>
+          <path d="M0,150 q30,-8 60,0 t60,0 v80 h-120 Z" fill="#5f9ea0" opacity="0.5"/>
+          <!-- fog -->
+          <ellipse cx="90" cy="120" rx="70" ry="18" fill="#cfd8d1" opacity="0.6"/>
+          <ellipse cx="150" cy="132" rx="60" ry="14" fill="#cfd8d1" opacity="0.5"/>
+          <!-- coast range -->
+          <path d="M100,230 L210,110 L320,230 Z" fill="#4a6b4f" opacity="0.85"/>
+          <!-- central valley -->
+          <rect x="300" y="205" width="220" height="25" fill="#c9a24a" opacity="0.6"/>
+          <!-- sierra -->
+          <path d="M480,230 L590,60 L640,120 L700,230 Z" fill="#5c5347" opacity="0.9"/>
+          <path d="M575,90 L590,60 L608,88 Z" fill="#f4f4f4"/>
+          <!-- desert -->
+          <rect x="690" y="210" width="210" height="20" fill="#d9a05b" opacity="0.55"/>
+          <path d="M760,210 q10,-30 4,-40" stroke="#7a8f57" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M810,210 q8,-24 2,-34" stroke="#7a8f57" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+          <!-- baseline -->
+          <line x1="0" y1="230" x2="900" y2="230" stroke="#8a8067" stroke-width="1.5"/>
+
+          <!-- labels -->
+          <text x="55" y="252" font-size="13" fill="currentColor" text-anchor="middle">Pacific &amp; Coast</text>
+          <text x="210" y="252" font-size="13" fill="currentColor" text-anchor="middle">Coast Range</text>
+          <text x="410" y="252" font-size="13" fill="currentColor" text-anchor="middle">Central Valley</text>
+          <text x="610" y="252" font-size="13" fill="currentColor" text-anchor="middle">Sierra Nevada</text>
+          <text x="795" y="252" font-size="13" fill="currentColor" text-anchor="middle">Desert</text>
+        </svg>
+        <p class="transect-caption">
+          Moist ocean air cools and drops fog along the coast; the Coast Range wrings out more of
+          it before it reaches the Central Valley, which bakes in summer with no marine relief.
+          The Sierra Nevada then blocks nearly everything else, casting a rain shadow over the
+          desert on the far side — the driest, hottest ground in the state, just a few hundred
+          miles from the foggiest.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="regions" class="alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Pick Your Ground</span>
+        <h2>Eight California growing regions</h2>
+        <p>Tap a region for its full climate profile, soil notes, best-performing plants, and a
+          plant/harvest calendar.</p>
+      </div>
+      <div id="region-grid" class="region-grid"></div>
+      <div id="region-detail" class="region-detail" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="compare">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Side by Side</span>
+        <h2>Region comparison</h2>
+        <p>The same numbers, lined up, so you can see just how far apart these climates really are.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Region</th>
+              <th>USDA Zone</th>
+              <th>Summer High</th>
+              <th>Winter Low</th>
+              <th>Rainfall</th>
+              <th>Growing Season</th>
+            </tr>
+          </thead>
+          <tbody id="comparison-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="water-wise" class="alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Applies Everywhere</span>
+        <h2>Water-wise gardening, statewide</h2>
+        <p>Nearly every California climate shares one trait: little to no summer rain. These
+          practices pay off no matter which region you're in.</p>
+      </div>
+      <div class="tip-grid">
+        <div class="tip-card">
+          <h3>Hydrozone your beds</h3>
+          <p>Group plants by water need, not just looks. Thirsty vegetables in one zone,
+            drought-tolerant natives in another — it stops you from overwatering the plants that
+            don't need it just to keep the ones that do alive.</p>
+        </div>
+        <div class="tip-card">
+          <h3>Mulch, always</h3>
+          <p>A 2–3 inch layer of organic mulch cuts evaporation dramatically and moderates soil
+            temperature — the single highest-leverage, lowest-cost thing you can do in every
+            region on this page.</p>
+        </div>
+        <div class="tip-card">
+          <h3>Drip over spray</h3>
+          <p>Drip irrigation puts water at the root zone instead of the air, cutting losses to
+            evaporation and wind drift — especially important in the deserts and Central Valley,
+            where summer air is bone-dry.</p>
+        </div>
+        <div class="tip-card">
+          <h3>Go native where you can</h3>
+          <p>California native plants evolved for exactly this dry-summer pattern. Working them
+            into non-edible parts of the landscape can cut outdoor water use substantially without
+            giving up a productive vegetable garden.</p>
+        </div>
+        <div class="tip-card">
+          <h3>Right plant, right microclimate</h3>
+          <p>A few miles — or a few hundred feet of elevation — can shift you a full zone.
+            Observe your own yard's frost pockets, wind exposure, and sun before trusting a
+            region-wide average too literally.</p>
+        </div>
+        <div class="tip-card">
+          <h3>Build the soil, not just the plant</h3>
+          <p>Compost improves water retention in sandy desert soil and drainage in valley clay
+            alike — it's the rare fix that helps at both extremes of California's soil spectrum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p><strong>Ground Truth</strong> — a California gardening reference.</p>
+      <p>Figures are general planning ranges, not forecasts, and California's terrain creates
+        microclimates even within a single region. For a planting plan tuned to your exact
+        address, check with your local UC Cooperative Extension or Master Gardener program.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
