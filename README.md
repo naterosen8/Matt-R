@@ -6,10 +6,11 @@ California Coastal, Central Valley, Sierra Nevada, High Desert, Low Desert,
 and the Inland Valleys/Wine Country.
 
 For each region it covers: USDA/Sunset zone, typical temperature and rainfall
-ranges, soil character, water needs, common challenges, best-performing
-vegetables/fruits/natives, and a 12-month plant/harvest calendar for a handful
-of representative crops. It also includes a coast-to-desert climate transect
-diagram, a side-by-side region comparison table, and general water-wise
+ranges, a specific soil-mix recipe and amendments, a season-by-season
+fertilization schedule, a season-by-season watering schedule, common
+challenges, best-performing vegetables/fruits/natives, and a 12-month
+plant/harvest calendar for a handful of representative crops. It also
+includes a side-by-side region comparison table and general water-wise
 gardening practices.
 
 ## Running it locally

@@ -66,25 +66,53 @@ function showRegion(id) {
       <div class="detail-col">
         <h4>Climate</h4>
         ${region.description.map((p) => `<p>${p}</p>`).join("")}
-        <h4>Soil</h4>
-        <p>${region.soil}</p>
-        <h4>Water</h4>
-        <p>${region.water}</p>
-        <h4>Watch out for</h4>
-        <ul>${region.challenges.map((c) => `<li>${c}</li>`).join("")}</ul>
-      </div>
-      <div class="detail-col">
         <h4>What grows well</h4>
         <div class="plant-groups">
           <div><span class="plant-group-label">Vegetables</span><p>${region.plants.vegetables.join(", ")}</p></div>
           <div><span class="plant-group-label">Fruits &amp; nuts</span><p>${region.plants.fruits.join(", ")}</p></div>
           <div><span class="plant-group-label">Natives</span><p>${region.plants.natives.join(", ")}</p></div>
         </div>
-        <h4>Planting &amp; harvest calendar</h4>
-        ${renderCalendar(region.calendar)}
+        <h4>Watch out for</h4>
+        <ul>${region.challenges.map((c) => `<li>${c}</li>`).join("")}</ul>
+      </div>
+      <div class="detail-col">
+        <h4>Soil mix &amp; amendments</h4>
+        ${renderScheduleBlock(region.soilMix.summary, region.soilMix.recipe, region.soilMix.amendments)}
+
+        <h4>Fertilization schedule</h4>
+        ${renderScheduleTable(region.fertilizing.summary, region.fertilizing.schedule)}
+
+        <h4>Watering schedule</h4>
+        ${renderScheduleTable(region.watering.summary, region.watering.schedule)}
       </div>
     </div>
+
+    <div class="detail-col detail-col-full">
+      <h4>Planting &amp; harvest calendar</h4>
+      ${renderCalendar(region.calendar)}
+    </div>
   `;
+}
+
+function renderScheduleBlock(summary, recipe, amendments) {
+  return `
+    <p>${summary}</p>
+    <p><strong>Mix:</strong> ${recipe}</p>
+    <ul>${amendments.map((a) => `<li>${a}</li>`).join("")}</ul>
+  `;
+}
+
+function renderScheduleTable(summary, schedule) {
+  const rows = schedule
+    .map(
+      (row) => `
+      <div class="sched-row">
+        <div class="sched-period">${row.period}</div>
+        <div class="sched-note">${row.note}</div>
+      </div>`
+    )
+    .join("");
+  return `<p>${summary}</p><div class="sched-list">${rows}</div>`;
 }
 
 function renderCalendar(calendar) {
